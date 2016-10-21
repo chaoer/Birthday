@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Birthday</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>	
+    <!-- 自定义的一个广播 -->
+    <string name="broadcast_bir_reminder_not_kill">com.chaoer.birthday.REMINDER_NOT_KILL</string>
+    <string name="brodacast_bir_reminder_remind_now">com.chaoer.birthday.REMINDE_NOW</string>
+    <!-- 程序中会用到的其它文字 -->
+    <string name="main_bottom_pressed_txt">当前选择</string>
+    <string name="main_bottom_recent_txt">最近</string>
+    <string name="main_bottom_all_txt">所有</string>
+    <string name="main_bottom_settings_txt">设置</string>
+    <string name="main_all_search_txt">搜索</string>
+    
+    <string name="title_right_btn_add_txt">添加</string>
+    <string name="title_btn_back_txt">返回</string>
+    
+    <string name="settings_reminder_thresh">提醒设置</string>
+    <string name="settings_security">密码管理</string>
+    <string name="settings_import_data">导入数据</string>
+    <string name="settings_export_data">导出数据</string>
+    <string name="settings_deleteTable">删除所有数据</string>
+    <string name="settings_help">帮助与反馈</string>
+    <string name="settings_about">关于Birthday</string>
+    
+    <string name="action_exit">退出</string>
+    
+    <string name="bir_item_name_default">TA</string>
+    <string name="bir_item_age_default">22</string>
+    <string name="bir_item_info_default">(公历)1993–02–14</string>
+    
+    <string name="add_bir_item_name">姓名</string>
+    <string name="add_bir_item_type">类型</string>
+    <string name="solar">公历</string>
+    <string name="lunar">农历</string>
+    <string name="add_bir_item_date">日期</string>
+    <string name="add_bir_item_btn_txt_add">添加</string>
+    <string name="add_bir_item_btn_txt_delete">删除</string>
+    <string name="add_bir_item_btn_txt_update">更改</string>
+    <string name="add_bir_item_btn_txt_cancle">取消</string>
+    
+    <string name="confirm_default_title">提醒</string>
+    <string name="confirm_default_msg">退出后，你将不能查看最新\n生日提醒.确定要退出？</string>
+    <string name="confirm_negative_txt">否</string>
+    <string name="confirm_positive_txt">是</string>
+    
+    <string name="about_report_title_back_btn_txt">返回</string>
+    <string name="about_report_title_txt_about">关于Birthday</string>
+    <string name="about_report_title_txt_report">反馈和帮助</string>
+    <string name="about_report_confirm_btn_txt">好滴</string>
+    <string name="edit_number_information">Version1.0 \n版权所有@Chaoer 2015</string>
+    <string name="about_report_about_infromation">
+        1.感谢使用本应用, 希望能对你有;\n
+	    2.本应用旨在为了帮助大家记住每一个朋友的生日;\n
+	    3.为了保证通用性, 在应用里面以除夕为每一个阴历年的开始.(事实上很多时候是以"立春"为开始的.);\n
+	    4.由于最初的目的, 应用强制会向通知栏推送生日提醒(\(^o^)/~);\n
+	    5.同上,应用不支持删除单个人的生日信息,如果非要删除,那么只有清空所有的信息咯!(O(∩_∩)O哈, 开玩笑啦,自己去发现这个功能吧,但是建议少用呢!);\n
+	    6.最后作者保留所有的权利和最终解释权.\n</string>
+    <string name="about_report_report_infromation">感谢你向我提供在使用中遇到的任何问题和任何bug, 我的邮箱是:\nhjn2010@whu.edu.cn</string>
+
+    <string name="reminder_set_title_txt">提醒设置</string>
+    <string name="reminder_set_back_btn_txt">返回</string>
+    <string name="reminder_set_positive_btn_txt">设置提醒</string>
+    <string name="reminder_set_positive_btn_txt2">更改设置</string>
+    <string name="reminder_set_nagative_btn_txt">取消</string>
+    <string name="reminder_set_reminder_open">自动提醒</string>
+    <string name="reminder_set_remind_type_once">一次</string>
+    <string name="reminder_set_remind_type_all">重复</string>
+    
+    <string name="reminder_activity_title_txt">生日闹钟</string>
+    <string name="reminder_activity_msg_txt">不要忘记给你的朋友送上\n生日祝福哦!</string>
+    <string name="reminder_activity_positive_btn_txt">点击查看</string>
+    <string name="reminder_activity_negative_btn_txt">好滴</string>
+    
+    <string name="msg_setting_title_txt">发不发呢？</string>
+    <string name="msg_setting_back_btn_txt">返回</string>
+    <string name="msg_setting_switch_txt">发不发</string>
+    <string name="msg_setting_number_txt">发给谁</string>
+    <string name="msg_setting_number_hint">18955201314</string>
+    <string name="msg_setting_positive_btn_txt">就这样了!</string>
+</resources>

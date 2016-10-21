@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#eee"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/title_bar"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/add_bir_title_btn_back"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/title_btn_back"
+            android:onClick="chat_back"
+            android:text="@string/title_btn_back_txt"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/add_bir_title_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/title_right_btn_add_txt"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/preference_single_item"
+                android:clickable="true"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/add_bir_item_txt_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:padding="8dp"
+                    android:text="@string/add_bir_item_name"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/add_bir_txt_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/add_bir_item_txt_name"
+                    android:layout_toRightOf="@id/add_bir_item_txt_name"
+                    android:background="@drawable/add_bir_name_edit_bg"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center"
+                    android:hint="@string/bir_item_name_default"
+                    android:inputType="textCapWords"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/preference_single_item"
+                android:clickable="true"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/add_bir_item_txt_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:padding="8dp"
+                    android:text="@string/add_bir_item_type"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+
+                <RadioGroup
+                    android:id="@+id/add_bir_radio_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@id/add_bir_item_txt_type"
+                    android:layout_toRightOf="@id/add_bir_item_txt_type"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:showDividers="middle" >
+
+                    <RadioButton
+                        android:id="@+id/add_bir_radio_type_solar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:checked="true"
+                        android:text="@string/solar"
+                        android:textColor="#000"
+                        android:textSize="17sp" />
+
+                    <RadioButton
+                        android:id="@+id/add_bir_radio_type_lunar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
+                        android:text="@string/lunar"
+                        android:textColor="#000"
+                        android:textSize="17sp" />
+                </RadioGroup>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/preference_first_item"
+                android:clickable="true"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/add_bir_item_txt_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:padding="8dp"
+                    android:text="@string/add_bir_item_date"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/add_bir_txt_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/add_bir_item_txt_date"
+                    android:layout_toRightOf="@id/add_bir_item_txt_date"
+                    android:gravity="center"
+                    android:hint="@string/bir_item_info_default"
+                    android:padding="8dp"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/preference_last_item"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:paddingTop="14dp" >
+
+                <DatePicker
+                    android:id="@+id/add_bir_datepicker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#4F4F4F"
+                    android:calendarViewShown="false"
+                    android:maxDate="12/31/2099"
+                    android:minDate="01/01/1901" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/add_bir_btn_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/btn_style_green"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="@string/add_bir_item_btn_txt_add"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/add_bir_btn_cancle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/btn_style_white"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="@string/add_bir_item_btn_txt_cancle"
+                android:textColor="#333"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

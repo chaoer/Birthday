@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:clickable="true"
+    android:descendantFocusability="blocksDescendants">
+    
+    <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="60dp"
+         android:gravity="center_vertical"
+         android:background="@drawable/mm_listitem"    
+         android:paddingTop="5dp">
+         
+         <ImageView
+            android:id="@+id/bir_item_head"
+            android:layout_width="55dp"
+       		android:layout_height="55dp"
+       		android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="0dp"
+            android:paddingEnd="0dp"
+            android:paddingLeft="5dp"
+            android:paddingStart="5dp"
+            android:src="@drawable/ic_listitem_head" 
+            android:contentDescription="@string/main_bottom_recent_txt"/>
+         <TextView
+            android:id="@+id/bir_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/bir_item_head"
+            android:layout_toEndOf="@id/bir_item_head"
+            android:padding="7dp"
+            android:text="@string/bir_item_name_default"
+            android:textColor="#000" />
+         <TextView
+            android:id="@+id/bir_item_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:padding="7dp"
+            android:text="@string/bir_item_age_default"
+            android:textColor="#666" />
+          <TextView
+            android:id="@+id/bir_item_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/bir_item_head"
+            android:layout_toRightOf="@id/bir_item_head"
+            android:layout_alignParentBottom="true"
+            android:padding="7dp"
+            android:text="@string/bir_item_info_default"
+            android:textColor="#666" />          
+	</RelativeLayout>
+</LinearLayout>
